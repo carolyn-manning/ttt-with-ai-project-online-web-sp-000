@@ -21,7 +21,7 @@ end
 
 def single_player
   puts "Player 'X', let's start!"
-  Game.new(Players::Human.new("X"), Players::Computer.new("O")).play
+  Game.new(player_2: Players::Computer.new("O")).play
 end
 
 def computer_game
