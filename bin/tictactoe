@@ -25,7 +25,7 @@ def single_player
 end
 
 def computer_game
-  Game.new(Players::Computer.new("X"), Players::Computer.new("O")).play
+  Game.new(player_1: Players::Computer.new("X"), player_2: Players::Computer.new("O")).play
 end
 
 play_game
